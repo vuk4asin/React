@@ -6,14 +6,10 @@ import Box from '@material-ui/core/Box';
 import axios from 'axios';
 import Facebook from './Facebook';
 import Google from './Google';
-import { EventSeat } from '@material-ui/icons';
-
 
 export default function Register() {
 
 const [user,setUser] = React.useState({name: '',email: '',password: ''});
-
-
 
 const handleSubmit = event => {
   event.preventDefault();
